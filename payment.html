@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--  icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css files-->
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+
+    <header class="p-3 text-bg-dark bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <i class="fa-solid fa-gamepad text-white"></i>
+            
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="homepage.html" class="nav-link px-2 text-white">Home</a></li>
+              <li><a href="shopping.html" class="nav-link px-2 text-white">Shopping</a></li>
+              <li><a href="about.html" class="nav-link px-2 text-secondary">About</a></li>
+              <li><a href="cart.html" class="nav-link px-2 text-white">Cart</a></li>
+            </ul>
+    
+            <div class="text-end">
+                <button type="button" class="btn btnheight-outline-light me-2 text-white border-white" onclick="Login()">Login</button>
+              <a href="cart.html"><button type="button" class="btn btn-warning">Go To Cart</button></a>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div class="hero px-4 pt-5 my-5 text-center border-bottom justify-content-center align-items-center">
+      <h1 class="h1 fw-bold">Payment</h1>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="Firstname" class="form-label">First name</label>
+          <input type="text" class="form-control" id="Firstname" required>
+        </div>
+        <div class="col-md-6">
+          <label for="Lastname" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="Lastname" required>
+        </div>
+        <div class="col-md-12">
+          <label for="cardnumber" class="form-label">Card Number</label>
+          <input type="number" class="form-control" id="cardnumber" required>
+        </div>
+        <div class="col-md-4">
+          <label for="HolderName" class="form-label">Holder Name</label>
+          <input type="text" class="form-control" id="HolderName" required>
+        </div>
+        <div class="col-md-4">
+            <label for="CVV" class="form-label">3-digit CVV</label>
+            <input pattern="[0-9]{3}" title="3-digit" type="number" class="form-control" id="CVV" required>
+          </div>
+        <div class="col-md-4">
+          <label for="Zip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="Zip" required>
+        </div>
+
+        <div class="col-md-6">
+            <label for="email" class="form-label">email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+
+        <div class="col-md-6">
+            <label for="phone" class="form-label">phone</label>
+            <input type="tel" class="form-control" id="phone" required>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            </label>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+      </div>
+
+      <script>
+        function Login() {
+          alert("O_o not implement yet! o_O");
+        }
+        </script>
+        
+
+</body>
+</html>

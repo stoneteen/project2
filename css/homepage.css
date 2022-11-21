@@ -1,0 +1,28 @@
+*{
+    text-align: center;
+    color: white;
+    font-family: Arial;
+}
+
+body{
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/most-popular-video-games-of-2022-1642612227.png?crop=1.00xw:1.00xh;0,0&resize=980:*);
+    /* background-repeat: no-repeat;
+    background-size:cover; */
+}
+
+.hero{
+    margin-top: 100px !important;
+    background-color: rgb(33, 57, 110);
+}
+
+img{
+    border-radius: 8px;
+    width: 500px;
+    height: 300px;
+}
+@media (max-width: 991.98px) {
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}

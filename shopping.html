@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--  icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css files-->
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+
+    <header class="p-3 text-bg-dark bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <i class="fa-solid fa-gamepad text-white"></i>
+            
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="homepage.html" class="nav-link px-2 text-white">Home</a></li>
+              <li><a href="shopping.html" class="nav-link px-2 text-secondary">Shopping</a></li>
+              <li><a href="about.html" class="nav-link px-2 text-white">About</a></li>
+              <li><a href="cart.html" class="nav-link px-2 text-white">Cart</a></li>
+            </ul>
+    
+            <div class="text-end">
+                <button type="button" class="btn btnheight-outline-light me-2 text-white border-white" onclick="Login()">Login</button>
+                <a href="cart.html"><button type="button" class="btn btn-warning">Go To Cart</button></a>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div class="hero px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="h1 fw-bold">SHOP</h1>
+      <br><br><br>
+
+      <div class="row mb-3 align-items-center justify-content-center"">
+        <div class="col col-lg-4"><img src="https://cdn.akamai.steamstatic.com/steam/apps/582010/capsule_616x353.jpg?t=1661838392" alt="MonsterHunter"></div>
+        <div class="col col-lg-2 ">MonsterHunter</div>
+        <div class="col col-lg-2 ">PRICE: <del>$29.99</del> <strong class="text-info">$14.99</strong></div>
+        <div class="col col-lg-4"><a href="cart.html"><button type="button" class="btn btn-warning btn-lg">Add to cart</button></div></a>
+      </div>
+      
+      <div class="row mb-3 align-items-center justify-content-center"">
+        <div class="col col-lg-4"><img src="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/phvVT0qZfcRms5qDAk0SI3CM.png" alt="EldenRing"></div>
+        <div class="col col-lg-2 ">ELDEN RING</div>
+        <div class="col col-lg-2 ">PRICE: <strong>$59.99</strong></div>
+        <div class="col col-lg-4"><a href="cart.html"><button type="button" class="btn btn-warning btn-lg">Add to cart</button></div></a>
+      </div>
+
+      <div class="row mb-3 align-items-center justify-content-center"">
+        <div class="col col-lg-4"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg?t=1667814365" alt="PUBG"></div>
+        <div class="col col-lg-2 ">PUBG: Battlegrounds</div>
+        <div class="col col-lg-2 ">PRICE: <strong>Free to Play</strong></div>
+        <div class="col col-lg-4"><a href="cart.html"><button type="button" class="btn btn-warning btn-lg">Add to cart</button></div></a>
+      </div>
+
+      <div class="row mb-3 align-items-center justify-content-center"">
+        <div class="col col-lg-4"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg?t=1668813907" alt="Call of Duty®: Modern Warfare® II"></div>
+        <div class="col col-lg-2 ">Call of Duty®: Modern Warfare® II</div>
+        <div class="col col-lg-2 ">PRICE:  <strong>$69.99</strong></div>
+        <div class="col col-lg-4"><a href="cart.html"><button type="button" class="btn btn-warning btn-lg">Add to cart</button></div></a>
+      </div>
+      
+      <div class="row mb-3 align-items-center justify-content-center"">
+        <div class="col col-lg-4"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/289070/header.jpg?t=1668540099" alt="Sid Meier’s Civilization® VI"></div>
+        <div class="col col-lg-2 ">Sid Meier’s Civilization® VI</div>
+        <div class="col col-lg-2 ">PRICE: <del>$59.99</del> <strong class="text-info">$5.99</strong></div>
+        <div class="col col-lg-4"><a href="cart.html"><button type="button" class="btn btn-warning btn-lg">Add to cart</button></div></a>
+      </div>
+
+      <div class="row mb-3 align-items-center justify-content-center"">
+        <div class="col col-lg-4"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/814380/header.jpg?t=1603904569" alt="Sekiro™: Shadows Die Twice"></div>
+        <div class="col col-lg-2 ">Sekiro™: Shadows Die Twice</div>
+        <div class="col col-lg-2 ">PRICE: <del>$59.99</del> <strong class="text-info">$24.99</strong></div>
+        <div class="col col-lg-4"><a href="cart.html"><button type="button" class="btn btn-warning btn-lg">Add to cart</button></div></a>
+      </div>
+    </div>
+
+    <script>
+        function Login() {
+          alert("O_o not implement yet! o_O");
+        }
+        </script>
+        
+
+</body>
+</html>
